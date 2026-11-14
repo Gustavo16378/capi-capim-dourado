@@ -12,6 +12,8 @@
 
 Solução da equipe Tyranitar para o tema 04 do HackaRun 2026: a jornada de compra integrada, digital e física, do Capim Dourado Shopping.
 
+**▶️ Pitch:** [assista ao vídeo no YouTube](https://youtube.com/shorts/Xko9SefQbbU)
+
 ## Roteiro para a banca
 
 O app está no ar e não precisa de cadastro: a tela de entrar tem um botão para cada conta de demonstração.
