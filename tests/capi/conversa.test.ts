@@ -327,9 +327,10 @@ describe('Capi com o Claude simulado', () => {
   })
 
   describe('TI13: busca sem resultado', () => {
-    // Garrafa térmica não existe no tests/seed.sql nem, de propósito, no seed/produtos.csv da demo
-    // (nenhum produto tem "térmica" no nome, na descrição ou nos atributos): é o pedido do roteiro
-    // para a Capi sem resultado. As lojas de casa e de esportes entram só nestes testes.
+    // Garrafa térmica não existe no tests/seed.sql (nenhum produto tem "térmica" no nome, na
+    // descrição ou nos atributos): é o pedido para a Capi sem resultado. O catálogo da demo
+    // (seed/produtos.csv) tem copos e garrafas térmicas; estes testes usam só o banco de teste.
+    // As lojas de casa e de esportes entram só nestes testes.
     // Casa: D (com produto de casa), E (principal) e a segunda unidade dela, F e H (secundária),
     // G (casa, mas vaga). Esportes: F e H, sem produto.
     async function lojasDeCasaEEsportes() {

@@ -104,6 +104,7 @@ A Capi nunca chama o Claude de verdade nos testes automáticos: as respostas do 
 | TU44 | A hora "pronta para retirar a partir de" no painel | RF20, RN01 | A próxima meia hora em Palmas já vem no campo; a frase "Hoje" ou "Amanhã, a partir das 09:00" segue a mesma regra da API; hora fora do formato não é aceita |
 | TU45 | O carrinho do caixa | RF19, RN05, RN15 | Reserva, produto do catálogo e "Outros" viram os itens do pedido; o caixa só oferece o cupom que desconta em algum item; o cupom da reserva ocupa o lado dele (loja ou shopping); o cupom escolhido sai do pedido quando o item dele sai |
 | TU46 | Desconto em porcentagem acima de 50% | RF23, RF28 | Pergunta "Este cupom dá 60% de desconto. Confirmar?" só em porcentagem e acima de 50%; na edição, só se o desconto mudou |
+| TU47 | O catálogo da demo acha os itens do dia a dia | RF02, RF05 | Óculos de sol, bolsa, carteira, copo Stanley, garrafa térmica e de água, pulseira, colar, relógio, celular, fone, carregador, calça jeans, camiseta, moletom, boné, mochila, perfume e maquiagem têm produto em 3 lojas ou mais pela busca do servidor; os térmicos estão em casa e em esportes, e os óculos de sol em ótica e em acessórios (a foto acha pela categoria que a Capi escolher); toda foto do CSV existe e os tipos do dia a dia têm a lista "busca" de sinônimos |
 
 ### Banco (TB)
 
@@ -302,7 +303,7 @@ Cada tela abaixo passa pelo axe-core e não pode ter violação de impacto `seri
 | RF02 Conversar com a Capi | TI01, TI08, TI13, TE01 |
 | RF03 Foto ou print | TI06, TI09, TE01 |
 | RF04 Link | TI07 |
-| RF05 Buscar | TA07, TE02, TE04 |
+| RF05 Buscar | TU47, TA07, TE02, TE04 |
 | RF06 Vitrine | TA10, TU13, TE03, TE11, TE12 |
 | RF07 Produto | TA09, TA44, TE02, TE35 |
 | RF08 Reservar na loja | TA11, TA15, TA40, TA49, TA57, TI03, TE02, TE28, TE36, TE38 |

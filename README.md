@@ -119,7 +119,7 @@ Nos três: aparência clara ou escura no rodapé da barra lateral (ou na Minha c
 | O quê | Na demonstração | Numa versão real |
 | --- | --- | --- |
 | Pagamento por Pix | O QR e o botão "Já paguei" são simulados, e o estorno do cancelamento também | Um provedor de Pix (PSP) |
-| Produtos, preços e estoque | 124 produtos fictícios, nas lojas reais da planta do shopping, com 20 unidades cada | O estoque de cada loja, integrado |
+| Produtos, preços e estoque | 157 produtos fictícios, nas lojas reais da planta do shopping, com estoque de exemplo | O estoque de cada loja, integrado |
 | Buscas da Demanda | 90 dias de buscas inventadas, para os gráficos terem o que mostrar | As buscas de verdade, que o app já grava |
 | Clientes e compras | A Ana, com 6 compras e 2.140 pontos; o lojista e o admin do seed | Os cadastros |
 | Onde o cliente está | Sem GPS dentro do shopping: a pessoa diz por qual entrada chegou, toca na entrada do mapa ou lê o QR da entrada | Beacons ou QR também nos corredores |
