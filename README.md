@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Gustavo16378/tyranitar-capim-dourado/actions/workflows/ci.yml"><img src="https://github.com/Gustavo16378/tyranitar-capim-dourado/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
+  <a href="https://github.com/Gustavo16378/capi-capim-dourado/actions/workflows/ci.yml"><img src="https://github.com/Gustavo16378/capi-capim-dourado/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
   <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript 5.9">
   <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black" alt="React 19">
   <a href="https://tyranitar-capim-dourado.pages.dev"><img src="https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflarepages&logoColor=white" alt="Cloudflare Pages"></a>
@@ -50,7 +50,7 @@ O easter egg tem um [roteiro de 30 segundos](docs/easter-egg.md#roteiro-de-demon
 | --- | --- |
 | Problema e requisitos | [Requisitos](docs/requisitos.md) e o [documento da primeira entrega (PDF)](docs/Capi_Tyranitar_Primeira_Entrega.pdf), com [onde está cada item pedido](docs/primeira-entrega.md) |
 | Protótipo funcional | [O app no ar](https://tyranitar-capim-dourado.pages.dev), as [telas](docs/telas.md) e o [design system publicado](https://tyranitar-capim-dourado.pages.dev/design-system) |
-| Evidências de testes | [Evidências de testes](docs/evidencias-testes.md): a bateria, o CI e cada bug corrigido com o teste que o cobre; o [plano de testes](docs/testes.md) e o [CI](https://github.com/Gustavo16378/tyranitar-capim-dourado/actions/workflows/ci.yml) |
+| Evidências de testes | [Evidências de testes](docs/evidencias-testes.md): a bateria, o CI e cada bug corrigido com o teste que o cobre; o [plano de testes](docs/testes.md) e o [CI](https://github.com/Gustavo16378/capi-capim-dourado/actions/workflows/ci.yml) |
 | Versão final | A branch `main`, publicada em [tyranitar-capim-dourado.pages.dev](https://tyranitar-capim-dourado.pages.dev) |
 | Instruções de execução | [Como rodar](#como-rodar), neste README |
 | Documentação | A pasta [`docs/`](docs/) (lista em [Documentação](#documentação)) |
@@ -69,7 +69,7 @@ Um site só, com três interfaces:
 | `/shopping` | Administração do shopping |
 | `/design-system` | Design system: tokens, componentes e movimentos nos temas claro e escuro |
 
-A Capi é a assistente de IA do app; o nome do app será definido junto com o shopping.
+O app se chama **Capi**, o mesmo nome da assistente de IA que está no centro dele (Capi · Capim Dourado).
 
 ### A jornada do cliente
 
@@ -154,8 +154,8 @@ React 19, Vite, TypeScript e Tailwind no front. Cloudflare Pages Functions e D1 
 Requisitos: **Node 22** (LTS, 22.12 ou mais novo) e Git. Tudo roda na máquina, sem conta no Cloudflare: o banco D1 local fica na pasta `.wrangler/`. Estes passos foram conferidos num clone limpo do GitHub.
 
 ```bash
-git clone https://github.com/Gustavo16378/tyranitar-capim-dourado.git
-cd tyranitar-capim-dourado
+git clone https://github.com/Gustavo16378/capi-capim-dourado.git
+cd capi-capim-dourado
 npm install
 cp .dev.vars.exemplo .dev.vars        # 1. preencha o .dev.vars (tabela abaixo)
 echo VITE_MODO_DEMO=1 > .env.local    # 2. o modo demonstração do front (entra no build)
@@ -241,7 +241,6 @@ O que faríamos numa versão real, com o shopping:
 - **App nativo** (ou o PWA nas lojas de apps), com notificação push (hoje os avisos aparecem quando o app está aberto), a câmera direto na Capi e a carteira no Wallet do celular.
 - **Pontos pela nota fiscal** (RF12): ler o QR da NFC-e de uma compra feita fora do app e consultar a nota na SEFAZ. Hoje os pontos entram pela compra registrada no balcão.
 - **Busca por semelhança com vetores** (Cloudflare Vectorize), quando o catálogo das lojas passar de algumas centenas de produtos.
-- **O nome do app**, definido junto com o shopping.
 
 ## Equipe
 
