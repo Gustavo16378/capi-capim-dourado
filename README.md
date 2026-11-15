@@ -10,6 +10,8 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/licen%C3%A7a-MIT-blue" alt="Licença MIT"></a>
 </p>
 
+**2º lugar no HackaRun 2026** (UniCatólica e Capim Dourado Shopping), entre 46 equipes.
+
 Solução da equipe Tyranitar para o tema 04 do HackaRun 2026: a jornada de compra integrada, digital e física, do Capim Dourado Shopping.
 
 **▶️ Pitch:** [assista ao vídeo no YouTube](https://youtube.com/shorts/Xko9SefQbbU)
