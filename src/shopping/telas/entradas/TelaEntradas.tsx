@@ -4,7 +4,7 @@
 import { QRCodeSVG } from 'qrcode.react'
 import { Button } from '../../../componentes'
 import { nomeDoPiso } from '../../../app/formatos'
-import { APP_NOME } from '../../../config'
+import { APP_NOME_COMPLETO } from '../../../config'
 import { ENTRADAS, linkDaEntrada, type Entrada } from '../../../mapa/entradas'
 import { useEntrada } from '../../../movimento'
 import { CabecalhoTela } from '../../../painel/comum/CabecalhoTela'
@@ -19,7 +19,7 @@ function CartaoDaEntrada({ entrada, link }: { entrada: Entrada; link: string }) 
         'print:min-h-[25cm] print:justify-center print:rounded-none print:border-0 print:bg-white print:p-0 print:text-black print:[break-after:page] print:[break-inside:avoid]'
       }
     >
-      <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink print:text-black">{APP_NOME}</p>
+      <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink print:text-black">{APP_NOME_COMPLETO}</p>
       <div>
         <h2 className="text-title-lg print:text-[48pt] print:leading-tight">{entrada.nome}</h2>
         <p className="text-body text-ink-muted print:text-[20pt] print:text-black">{nomeDoPiso(entrada.piso)}</p>

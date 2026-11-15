@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import { APP_NOME } from './src/config.ts'
+import { APP_NOME, APP_NOME_COMPLETO } from './src/config.ts'
 import tokens from './src/design-system/tokens.json' with { type: 'json' }
 
 /** Cor de um token do tokens.json (tema claro), para onde CSS não chega: manifesto e index.html. */
@@ -34,7 +34,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icone.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: APP_NOME,
+        name: APP_NOME_COMPLETO,
         short_name: APP_NOME,
         description: 'Pergunte à Capi, reserve e retire no Capim Dourado Shopping.',
         lang: 'pt-BR',

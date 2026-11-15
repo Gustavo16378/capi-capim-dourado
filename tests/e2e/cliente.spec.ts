@@ -3,7 +3,7 @@
 // computador, e cada jornada reserva de verdade.
 import { expect, test } from '@playwright/test'
 import { formatarNumero } from '../../src/componentes/formatar'
-import { APP_NOME } from '../../src/config'
+import { APP_NOME, APP_NOME_COMPLETO } from '../../src/config'
 import {
   aba,
   comSessaoDaAna,
@@ -155,7 +155,7 @@ test.describe('PWA', () => {
     const manifesto = await request.get('/manifest.webmanifest')
     expect(manifesto.status()).toBe(200)
     expect(await manifesto.json()).toMatchObject({
-      name: APP_NOME,
+      name: APP_NOME_COMPLETO,
       short_name: APP_NOME,
       display: 'standalone',
       icons: expect.arrayContaining([expect.objectContaining({ sizes: '512x512' })]),

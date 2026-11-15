@@ -1,8 +1,10 @@
 /**
- * Nome do app (provisório). Quando o nome definitivo sair, troque só esta linha.
+ * Nome do app: Capi, o mesmo da assistente de IA (decidido em 15/11/2026, depois do HackaRun).
  *
- * Use sempre esta constante (título da página, manifesto do PWA, Abertura,
+ * Use sempre estas constantes (título da página, manifesto do PWA, Abertura,
  * cabeçalhos); nunca escreva o nome do app solto no código.
- * Capi é o nome da assistente de IA, não do app.
  */
-export const APP_NOME = 'Capim Dourado'
+export const APP_NOME = "Capi";
+
+/** Nome com o shopping, para onde o app aparece sozinho (Abertura, entrar, manifesto do PWA, QR das entradas). */
+export const APP_NOME_COMPLETO = "Capi · Capim Dourado";

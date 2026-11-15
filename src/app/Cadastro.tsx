@@ -2,7 +2,7 @@ import { useId, useState, type FormEvent } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router'
 import { cadastrar, comoErroApi, useSessao, type ErroApi } from '../api'
 import { Button, CapiMark, Icon } from '../componentes'
-import { APP_NOME } from '../config'
+import { APP_NOME, APP_NOME_COMPLETO } from '../config'
 import { useEntrada } from '../movimento'
 import { Campo } from './Campo'
 
@@ -48,7 +48,7 @@ export default function Cadastro() {
           <CapiMark className="size-9" />
         </span>
         <div>
-          <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink">{APP_NOME}</p>
+          <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink">{APP_NOME_COMPLETO}</p>
           <h1 className="mt-1 text-title-lg">Crie sua conta</h1>
           <p className="mt-1 text-body-sm text-ink-muted">Para reservar, juntar pontos e conversar com a Capi.</p>
         </div>

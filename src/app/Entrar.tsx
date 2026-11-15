@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router'
 import { comoErroApi, contasDeDemonstracao, entrar, entrarComDemo, useDados, useSessao, type ErroApi } from '../api'
 import { Button, CapiMark, Icon } from '../componentes'
-import { APP_NOME } from '../config'
+import { APP_NOME, APP_NOME_COMPLETO } from '../config'
 import { useEntrada } from '../movimento'
 import { sessaoDaLoja, sessaoDoShopping } from '../painel/api/sessoes'
 import type { ContaDeDemonstracao, Perfil, Usuario } from '../tipos'
@@ -80,7 +80,7 @@ export default function Entrar() {
             <CapiMark className="size-9" />
           </span>
           <div>
-            <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink">{APP_NOME}</p>
+            <p className="text-caption font-semibold uppercase tracking-widest text-marrom-ink">{APP_NOME_COMPLETO}</p>
             <h1 className="mt-1 text-title-lg">Entre na sua conta</h1>
             <p className="mt-1 text-body-sm text-ink-muted">{CHAMADA[perfilPedido]}</p>
           </div>

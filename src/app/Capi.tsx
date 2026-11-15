@@ -414,7 +414,7 @@ export default function Capi() {
 
   return (
     <div className="flex h-full flex-col">
-      <title>{`Capi · ${APP_NOME}`}</title>
+      <title>{`Conversa · ${APP_NOME}`}</title>
       <header className="flex flex-none items-center gap-3 border-b bg-surface p-4">
         {/* 13 toques seguidos aqui soltam o gato preto (um segredo do easter egg, só pelo toque:
             o caminho pelo teclado para o tirano é a palavra "tyranitar"). */}
